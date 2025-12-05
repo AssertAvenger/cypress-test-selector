@@ -104,7 +104,7 @@ export function formatJson(result: MappingResult): string {
     count: result.selected.length,
     safetyLevel: result.safetyLevel,
     threshold: result.threshold,
-    mappings: result.mappings.map((m) => ({
+    mappings: result.mappings.map((m: TestMapping) => ({
       testPath: m.testPath,
       score: m.score,
       heuristics: m.heuristics,
