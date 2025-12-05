@@ -1,0 +1,35 @@
+{
+  "name": "cypress-test-selector",
+  "version": "0.1.0",
+  "description": "Intelligent Cypress test selection based on git diffs",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces && rm -rf node_modules"
+  },
+  "keywords": [
+    "cypress",
+    "test-selection",
+    "git-diff",
+    "test-impact-analysis",
+    "ci",
+    "testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
+

@@ -1,0 +1,51 @@
+{
+  "name": "cypress-test-selector",
+  "version": "0.1.0",
+  "description": "CLI tool for intelligent Cypress test selection based on git diffs",
+  "type": "module",
+  "bin": {
+    "cy-select": "./dist/bin/cy-select.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "cypress",
+    "test-selection",
+    "git-diff",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AssertAvenger/cypress-test-selector.git"
+  },
+  "homepage": "https://github.com/AssertAvenger/cypress-test-selector#readme",
+  "bugs": {
+    "url": "https://github.com/AssertAvenger/cypress-test-selector/issues"
+  },
+  "dependencies": {
+    "@cypress-test-selector/core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsup": "^8.0.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

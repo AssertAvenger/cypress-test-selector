@@ -1,0 +1,55 @@
+{
+  "name": "@cypress-test-selector/core",
+  "version": "0.1.0",
+  "description": "Core diff parsing and intelligent mapping logic for Cypress test selection",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "cypress",
+    "test-selection",
+    "git-diff"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AssertAvenger/cypress-test-selector.git"
+  },
+  "homepage": "https://github.com/AssertAvenger/cypress-test-selector#readme",
+  "bugs": {
+    "url": "https://github.com/AssertAvenger/cypress-test-selector/issues"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "exports": {
+    "./diff": {
+      "types": "./dist/diff/index.d.ts",
+      "default": "./dist/diff/index.js"
+    },
+    "./discovery": {
+      "types": "./dist/discovery/index.d.ts",
+      "default": "./dist/discovery/index.js"
+    },
+    "./mapper": {
+      "types": "./dist/mapper/index.d.ts",
+      "default": "./dist/mapper/index.js"
+    }
+  }
+}
+
