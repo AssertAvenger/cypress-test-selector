@@ -19,7 +19,10 @@
     "test-selection",
     "git-diff"
   ],
-  "author": "",
+  "author": {
+    "name": "Franklin Francis",
+    "url": "https://github.com/AssertAvenger"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
