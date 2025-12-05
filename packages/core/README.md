@@ -1,35 +1,35 @@
-# @cypress-test-selector/core
+# @assertavenger/cypress-test-selector-core
 
 Core library for intelligent Cypress test selection based on git diffs. Provides diff parsing, test discovery, and intelligent mapping heuristics.
 
 ## Installation
 
 ```bash
-npm install @cypress-test-selector/core
+npm install @assertavenger/cypress-test-selector-core
 ```
 
 ## Modules
 
 This package is organized into subpath exports:
 
-### `@cypress-test-selector/core/diff`
+### `@assertavenger/cypress-test-selector-core/diff`
 
 Parse and normalize git diff output.
 
 ```typescript
-import { parseDiff } from '@cypress-test-selector/core/diff';
+import { parseDiff } from '@assertavenger/cypress-test-selector-core/diff';
 
 const result = parseDiff(gitDiffOutput);
 // result.files - array of changed files
 // result.warnings - any parsing warnings
 ```
 
-### `@cypress-test-selector/core/discovery`
+### `@assertavenger/cypress-test-selector-core/discovery`
 
 Discover Cypress test files in a project.
 
 ```typescript
-import { discoverTests } from '@cypress-test-selector/core/discovery';
+import { discoverTests } from '@assertavenger/cypress-test-selector-core/discovery';
 
 const tests = await discoverTests({
   projectRoot: process.cwd(),
@@ -37,14 +37,14 @@ const tests = await discoverTests({
 });
 ```
 
-### `@cypress-test-selector/core/mapper`
+### `@assertavenger/cypress-test-selector-core/mapper`
 
 Map changed files to relevant test files using intelligent heuristics.
 
 ```typescript
-import { mapDiffToTests } from '@cypress-test-selector/core/mapper';
-import { parseDiff } from '@cypress-test-selector/core/diff';
-import { discoverTests } from '@cypress-test-selector/core/discovery';
+import { mapDiffToTests } from '@assertavenger/cypress-test-selector-core/mapper';
+import { parseDiff } from '@assertavenger/cypress-test-selector-core/diff';
+import { discoverTests } from '@assertavenger/cypress-test-selector-core/discovery';
 
 const diffResult = parseDiff(gitDiffOutput);
 const tests = await discoverTests({ projectRoot: process.cwd() });

@@ -5,7 +5,7 @@ Command-line interface for intelligent Cypress test selection based on git diffs
 ## Installation
 
 ```bash
-npm install cypress-test-selector
+npm install @assertavenger/cypress-test-selector
 ```
 
 ## Usage

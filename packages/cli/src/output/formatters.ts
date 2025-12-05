@@ -1,5 +1,5 @@
-import type { MappingResult, TestMapping } from "@cypress-test-selector/core/mapper";
-import type { DiscoveredTestFile } from "@cypress-test-selector/core/discovery";
+import type { MappingResult, TestMapping } from "@assertavenger/cypress-test-selector-core/mapper";
+import type { DiscoveredTestFile } from "@assertavenger/cypress-test-selector-core/discovery";
 
 /**
  * Format mapping result as human-readable output

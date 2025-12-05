@@ -1,5 +1,5 @@
 {
-  "name": "cypress-test-selector",
+  "name": "@assertavenger/cypress-test-selector",
   "version": "0.1.0",
   "description": "CLI tool for intelligent Cypress test selection based on git diffs",
   "type": "module",
@@ -40,7 +40,7 @@
     "url": "https://github.com/AssertAvenger/cypress-test-selector/issues"
   },
   "dependencies": {
-    "@cypress-test-selector/core": "file:../core"
+    "@assertavenger/cypress-test-selector-core": "file:../core"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
